@@ -190,7 +190,7 @@ services:
     ports:
       - ${HYPERDX_APP_PORT}:${HYPERDX_APP_PORT}
     environment:
-      NEXT_PUBLIC_API_SERVER_URL: 'http://localhost:8000'
+      NEXT_PUBLIC_API_SERVER_URL: 'http://212.77.2.113:8008'
       HYPERDX_API_KEY: ${HYPERDX_API_KEY}
       NODE_ENV: development
       PORT: ${HYPERDX_APP_PORT}
@@ -203,7 +203,7 @@ services:
     container_name: hdx-oss-ch-server
     ports:
       - 8123:8123 # http api
-      - 9000:9000 # native
+      - 9009:9009 # native
     environment:
       # default settings
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
